@@ -4,7 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  // 必须添加这一行，否则手动切换无效！
+  // 必须加这一行，否则手动切换无效！
   darkMode: 'selector', 
   theme: {
     extend: {},

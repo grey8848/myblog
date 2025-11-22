@@ -6,12 +6,14 @@
   }
 
   body {
-    /* 核心逻辑：默认是浅色背景(bg-zinc-50)，dark模式下变成深色(dark:bg-slate-900) */
+    /* 核心逻辑：定义浅色和深色模式下的默认背景和文字颜色 */
+    /* 默认(Light): 灰白背景，深色字 */
+    /* Dark模式: 深蓝背景，浅色字 */
     @apply bg-zinc-50 text-zinc-900 dark:bg-slate-900 dark:text-zinc-100 transition-colors duration-300;
   }
 }
 
-/* 自定义滚动条 */
+/* 滚动条样式 */
 ::-webkit-scrollbar {
   width: 10px;
 }
