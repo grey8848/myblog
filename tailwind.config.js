@@ -4,7 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  // 关键：启用手动选择器模式 (v4 推荐用 'selector'，v3 用 'class'，这里都兼容)
+  // 必须添加这一行，否则手动切换无效！
   darkMode: 'selector', 
   theme: {
     extend: {},
