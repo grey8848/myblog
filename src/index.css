@@ -1,29 +1,26 @@
 @import "tailwindcss";
 
-/* 注意：在 v4 中，@import "tailwindcss"; 
-  会自动包含 base, components, 和 utilities。
-*/
-
 @layer base {
   html {
     scroll-behavior: smooth;
   }
 
   body {
-    @apply bg-slate-900 text-zinc-100;
+    /* 关键修改：默认是白底黑字，dark模式下才是深色背景浅色文字 */
+    @apply bg-zinc-50 text-zinc-900 dark:bg-slate-900 dark:text-zinc-100 transition-colors duration-300;
   }
 }
 
-/* 自定义滚动条 - 极客风 */
+/* 自定义滚动条 */
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  @apply bg-slate-900;
+  @apply bg-transparent;
 }
 ::-webkit-scrollbar-thumb {
-  @apply bg-zinc-700 rounded-full border-2 border-slate-900;
+  @apply bg-zinc-300 dark:bg-zinc-700 rounded-full border-2 border-zinc-50 dark:border-slate-900;
 }
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-indigo-500;
+  @apply bg-zinc-400 dark:bg-indigo-500;
 }

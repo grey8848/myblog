@@ -6,7 +6,7 @@ import Portfolio from './components/Portfolio';
 import BlogPosts from './components/BlogPosts';
 import Footer from './components/Footer';
 
-// Dummy Data
+// Dummy Data (保持不变)
 const projects = [
   {
     id: 1,
@@ -69,21 +69,11 @@ const posts = [
   },
 ];
 
-
-
-
-
-
-
-
-
-
-
-
-
 function App() {
   return (
-    <div className="dark antialiased min-h-screen bg-slate-900 font-sans text-zinc-100">
+    // 关键修改：移除了 'dark' 和 'bg-slate-900'
+    // 现在背景色和文字颜色由 index.css 中的 body 样式控制，或者由各组件的 dark: 类控制
+    <div className="antialiased min-h-screen font-sans transition-colors duration-300">
       <Navbar />
       <Hero />
       <TechStack />
