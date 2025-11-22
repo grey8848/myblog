@@ -71,8 +71,9 @@ const posts = [
 
 function App() {
   return (
-    // 关键修复：移除了 'dark' 和 'bg-slate-900'
-    // 现在的背景色完全由 index.css 动态控制
+    // 🚨🚨 核心修改：这里删除了 "dark" 和 "bg-slate-900" 🚨🚨
+    // 之前的代码是: className="dark antialiased min-h-screen bg-slate-900 ..."
+    // 现在的代码是:
     <div className="antialiased min-h-screen font-sans transition-colors duration-300">
       <Navbar />
       <Hero />
