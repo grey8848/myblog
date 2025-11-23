@@ -166,6 +166,22 @@ class Transformer(nn.Module):
       <h2>Conclusion</h2>
       <p>Large Language Models represent a transformative technology with wide-ranging applications. As the field continues to advance, we can expect even more sophisticated and capable AI systems in the future.</p>
     `
+  },
+  4: {
+    id: 4,
+    date: "2025-07-01",
+    category: "Backend Development",
+    title: "backend Development with Node.js and Express",
+    summary: "an in-depth look at building scalable backend services using Node.js and Express framework.",
+    content: `
+      <h2>Getting Started with Node.js and Express</h2>
+      <p>Node.js is a powerful JavaScript runtime built on Chrome's V8 engine, while Express is a minimal and flexible Node.js web application framework. Together, they provide a robust platform for building backend services.</p>
+      <h3>Setting Up Your Environment</h3>
+      <p>To get started, ensure you have Node.js installed. Then, create a new project and install Express:</p>
+      <pre><code>mkdir my-backend
+        cd my-backend
+        npm init -y
+        npm install express</code></pre>`
   }
 };
 

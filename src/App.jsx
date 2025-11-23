@@ -69,6 +69,14 @@ const posts = [
     summary: "An overview of LLMs, their architecture, applications, and future trends.",
     link: "#",
   },
+{
+    id: 4,
+    date: "2025-07-01",
+    category: "Backend Development",
+    title: "backend Development with Node.js and Express",
+    summary: "an in-depth look at building scalable backend services using Node.js and Express framework.",
+    link: "#",
+  },
 ];
 
 // Home component that contains all the main sections
