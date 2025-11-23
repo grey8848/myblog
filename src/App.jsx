@@ -1,10 +1,12 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import TechStack from './components/TechStack';
 import Portfolio from './components/Portfolio';
 import BlogPosts from './components/BlogPosts';
 import Footer from './components/Footer';
+import BlogPostDetail from './components/BlogPostDetail';
 
 // Dummy Data (保持不变)
 const projects = [
@@ -69,16 +71,26 @@ const posts = [
   },
 ];
 
+// Home component that contains all the main sections
+const Home = () => (
+  <div className="min-h-screen bg-white">
+    <Navbar />
+    {/* <Hero /> */}
+    {/* <TechStack /> */}
+    {/* <Portfolio projects={projects} /> */}
+    <BlogPosts posts={posts} />
+    <Footer />
+  </div>
+);
+
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
-      <Hero />
-      <TechStack />
-      <Portfolio projects={projects} />
-      <BlogPosts posts={posts} />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog/:id" element={<BlogPostDetail />} />
+      </Routes>
+    </Router>
   );
 }
 

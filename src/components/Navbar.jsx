@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Sun, Moon, Monitor, Menu, X } from 'lucide-react';
+import { Sun, Moon, Monitor } from 'lucide-react';
 
 const Navbar = () => {
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem('theme');
     return savedTheme || 'system';
   });
-  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -84,7 +83,7 @@ const Navbar = () => {
               {theme.charAt(0).toUpperCase() + theme.slice(1)}
             </span>
           </button>
-
+{/* 
           <button
             onClick={() => setIsOpen(!isOpen)}
             type="button"
@@ -92,9 +91,9 @@ const Navbar = () => {
           >
             <span className="sr-only">Open main menu</span>
             {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          </button> */}
         </div>
-        <div className={`${isOpen ? 'block' : 'hidden'} items-center justify-between w-full md-flex md-w-auto md-order-1`} id="navbar-sticky">
+        {/* <div className={`${isOpen ? 'block' : 'hidden'} items-center justify-between w-full md-flex md-w-auto md-order-1`} id="navbar-sticky">
           <ul className="flex flex-col p-4 md-p-0 mt-4 font-medium border border-zinc-200 rounded-lg bg-zinc-50 md-gap-8 md-flex-row md-mt-0 md-border-0 md-bg-transparent">
             {['Home', 'About', 'Projects', 'Blog', 'Contact'].map((item) => (
               <li key={item}>
@@ -107,7 +106,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
       </div>
     </nav>
   );

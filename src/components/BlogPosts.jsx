@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
 const BlogPosts = ({ posts }) => (
@@ -20,9 +21,12 @@ const BlogPosts = ({ posts }) => (
             </div>
             <h3 className="text-xl font-bold text-zinc-900 mb-3">{post.title}</h3>
             <p className="text-zinc-600 mb-4">{post.summary}</p>
-            <a href={post.link} className="inline-flex items-center text-indigo-600 hover-text-indigo-700 font-semibold">
+            <Link
+              to={`/blog/${post.id}`}
+              className="inline-flex items-center text-indigo-600 hover-text-indigo-700 font-semibold"
+            >
               阅读更多 <ArrowRight size={18} className="ml-2" />
-            </a>
+            </Link>
           </div>
         ))}
       </div>
