@@ -6,9 +6,14 @@
   }
 
   body {
-    /* 🚨🚨 核心修改：定义背景色逻辑 🚨🚨 */
-    /* 默认是 bg-zinc-50 (亮灰白)，只有在 dark 模式下才变 bg-slate-900 (深蓝黑) */
-    @apply bg-zinc-50 text-zinc-900 dark:bg-slate-900 dark:text-zinc-100 transition-colors duration-300;
+    background-color: rgb(250 250 250);
+    color: rgb(24 24 27);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .dark body {
+    background-color: rgb(15 23 42);
+    color: rgb(241 245 249);
   }
 }
 

@@ -4,8 +4,10 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  // 🚨🚨 核心修改：开启手动选择器模式 🚨🚨
-  darkMode: 'selector', 
+  // Tailwind v4 dark mode configuration
+  darkMode: {
+    selector: '.dark',
+  },
   theme: {
     extend: {},
   },

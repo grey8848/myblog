@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowRight, Mail } from 'lucide-react';
 
 const Hero = () => (
-  <section id="home" className="relative bg-slate-900 pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden min-h-screen flex items-center">
+  <section id="home" className="relative bg-white dark:bg-slate-900 pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden min-h-screen flex items-center transition-colors duration-300">
     {/* 背景光效 */}
     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full z-0 pointer-events-none">
       <div className="absolute top-20 left-10 w-72 h-72 bg-indigo-600/20 rounded-full blur-[128px]"></div>
@@ -12,13 +12,13 @@ const Hero = () => (
     <div className="max-w-screen-xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center relative z-10">
       <div className="text-center md:text-left animate-fade-in-up">
         <div className="inline-block px-3 py-1 mb-6 border border-indigo-500/30 rounded-full bg-indigo-500/10">
-            <span className="text-indigo-300 text-sm font-medium tracking-wide">🚀 Frontend Architect & Designer</span>
+            <span className="text-indigo-600 dark:text-indigo-300 text-sm font-medium tracking-wide">🚀 Frontend Architect & Designer</span>
         </div>
-        <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6 tracking-tight">
+        <h1 className="text-5xl md:text-7xl font-extrabold text-zinc-900 dark:text-white leading-tight mb-6 tracking-tight">
           Building the <br/>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-400">Future</span> with Code.
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600 dark:from-indigo-400 dark:to-violet-400">Future</span> with Code.
         </h1>
-        <p className="text-xl text-zinc-400 mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed">
+        <p className="text-xl text-zinc-600 dark:text-zinc-400 mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed">
           Hi, I'm Grey. I craft high-performance, beautiful web experiences using modern technologies and minimalist design principles.
         </p>
         <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
@@ -31,7 +31,7 @@ const Hero = () => (
           </a>
           <a
             href="#contact"
-            className="px-8 py-4 border border-zinc-700 text-zinc-300 font-semibold rounded-xl hover:border-indigo-500 hover:text-white hover:bg-zinc-800 transition-all duration-300 flex items-center justify-center"
+            className="px-8 py-4 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 font-semibold rounded-xl hover:border-indigo-500 hover:text-white hover:bg-indigo-600 transition-all duration-300 flex items-center justify-center"
           >
             <Mail className="mr-2 w-5 h-5" />
             Contact Me
