@@ -63,7 +63,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full z-20 top-0 left-0 border-b border-zinc-200 bg-white-90 backdrop-blur-sm transition-colors duration-300">
+    <nav className="fixed w-full z-20 top-0 left-0 border-b border-zinc-200 bg-white opacity-90 backdrop-blur-sm transition-colors duration-300">
       <div className="container flex flex-wrap items-center justify-between p-4">
         <a href="#" className="flex items-center gap-3">
           <span className="self-center text-2xl font-semibold whitespace-nowrap text-zinc-800">Jack Blog</span>
@@ -83,7 +83,7 @@ const Navbar = () => {
               {theme.charAt(0).toUpperCase() + theme.slice(1)}
             </span>
           </button>
-{/* 
+          {/* 
           <button
             onClick={() => setIsOpen(!isOpen)}
             type="button"
