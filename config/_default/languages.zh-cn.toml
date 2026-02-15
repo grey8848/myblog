@@ -8,7 +8,6 @@ title = "我的个人博客"
   displayName = "中文"
   isoCode = "zh-cn"
   rtl = false
-  dateFormat = "2006-01-02"
   description = "记录技术与生活。"
 
 [params.author]

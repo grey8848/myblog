@@ -1,7 +1,8 @@
 # -- Site Configuration --
-theme = "blowfish"
+theme = "hugo-theme-stack"
 baseURL = "http://localhost:1313/"
 defaultContentLanguage = "zh-cn"
+hasCJKLanguage = true
 
 enableRobotsTXT = true
 summaryLength = 0
@@ -29,4 +30,4 @@ enableEmoji = true
   priority = 0.5
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
